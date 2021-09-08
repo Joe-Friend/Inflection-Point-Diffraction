@@ -1,8 +1,8 @@
 function [tt,zz,u] = inflection_FD_Popov(theta,Z,t0,tmax,dz,dt,WG)
 z=(0:dz:Z)';
-M=length(z)-1
+M=length(z)-1;
 t=(t0:dt:tmax);
-N=length(t)-1
+N=length(t)-1;
 if WG==1
     nu=2.338107410459763; % (Minus) first zero of Airy
 elseif WG==2
